@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Namoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Una propuesta especial!</h1>
+        <p>Hola flaquita. 🤗❤️😻</p>
+        <p>Quiero decirte que eres importante para mí.</p>
+        <p>Te gustaría ser mi novia?</p>
+        <p class="heart" onclick="mostrarResposta()">❤️</p>
+        <button id="nao" onmouseover="mudarPosicao()">No</button>
+        <p id="resposta" style="display: none;"></p>
+    </div>
+    <script>
+        function mostrarResposta() {
+            document.getElementById('resposta').style.display = 'block';
+            document.getElementById('resposta').innerHTML = 'Síí! Acepto, mi flaquito ❤️';
+        }
+
+        function mudarPosicao() {
+            const buttonNao = document.getElementById('nao');
+            const randomX = Math.floor(Math.random() * window.innerWidth);
+            const randomY = Math.floor(Math.random() * window.innerHeight);
+            buttonNao.style.left = `${randomX}px`;
+            buttonNao.style.top = `${randomY}px`;
+        }
+    </script>
+</body>
+</html>

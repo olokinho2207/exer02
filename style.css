@@ -1,0 +1,32 @@
+body {
+   background-color: #10054b;
+   text-align: center;
+   font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+}
+
+p {
+    font-family: Arial,sans-serif;
+    color: #ffffff;
+}
+
+h1 {
+    color: #ff3366;
+}
+
+.heart {
+    font-size: 50px;
+    color: #ff3366;
+    cursor: pointer;
+}
+#nao {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #10054bbd;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
